@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MuseumComponent } from './museum/museum.component';
+import { MuseumComponent } from './museum.component';
+import { MuseumRoutingModule } from './museum-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MuseumRoutingModule
   ],
   declarations: [MuseumComponent]
 })

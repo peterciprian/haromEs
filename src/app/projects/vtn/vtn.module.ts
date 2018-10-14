@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VtnComponent } from './vtn/vtn.component';
+import { VtnComponent } from './vtn.component';
+import { VtnRoutingModule } from './vtn-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    VtnRoutingModule
   ],
   declarations: [VtnComponent]
 })

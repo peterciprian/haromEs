@@ -13,23 +13,23 @@ const routes: Routes = [
   },
   {
     path: 'bsc',
-    loadChildren: './mag/mag.module#MagModule'
+    loadChildren: './bsc/bsc.module#BscModule'
   },
   {
     path: 'museum',
-    loadChildren: './mag/mag.module#MagModule'
+    loadChildren: './museum/museum.module#MuseumModule'
   },
   {
     path: 'bkeszi',
-    loadChildren: './mag/mag.module#MagModule'
+    loadChildren: './bkeszi/bkeszi.module#BkesziModule'
   },
   {
     path: 'pp',
-    loadChildren: './mag/mag.module#MagModule'
+    loadChildren: './pp/pp.module#PpModule'
   },
   {
     path: 'vtn',
-    loadChildren: './mag/mag.module#MagModule'
+    loadChildren: './vtn/vtn.module#VtnModule'
   },
 ];
 

@@ -1,0 +1,17 @@
+.logo {
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(255, 255, 0);
+    padding: 0 4px;
+    color: #ffff00;
+    background-color: black;
+}
+.bg-dark {
+    background-color: black !important;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: yellow !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,0,.5) !important;
+}
