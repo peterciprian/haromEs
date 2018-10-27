@@ -131,25 +131,174 @@ button.navbar-toggler {
 /*UP Button*/
 
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #dddddd60;
-    color: rgba(255, 255, 0, .5);
-    cursor: pointer;
-    padding: 2px 10px;
-    border-radius: 4px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dddddd60;
+  color: rgba(255, 255, 0, .5);
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 4px;
 }
 
 #myBtn:hover {
-    background-color: #dddddddd;
-    color: rgba(255, 255, 0, .5);
+  background-color: #dddddddd;
+  color: rgba(255, 255, 0, .5);
 }
+
 a#in {
-    color: rgba(255, 255, 0, .5);
+  color: rgba(255, 255, 0, .5);
+}
+
+.team_title {
+  color: rgba(255, 255, 0, .5);
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-size: 16pt;
+}
+
+.name_field {
+  color: rgba(255, 255, 0, .5);
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-variant: small-caps;
+  font-size: 12pt;
+}
+
+.image_border {
+  height: 10vh;
+  width: 10vh;
+  border: 4px solid yellow;
+  border-radius: 50%;
+}
+
+.background {
+  padding-top: 8pt;
+  background-color: #5c6166;
+}
+
+.image_border {
+  opacity: .5;
+}
+
+.person_div:hover .image_border {
+  opacity: 1;
+}
+
+.person_div:hover .name_field {
+  color: rgba(255, 255, 0, 1);
+}
+
+.person_div:hover {
+  cursor: pointer;
+}
+
+.team_filed {
+  position: relative;
+  height: calc(100vh - 104px);
+}
+
+.person_div {
+  position: absolute;
+}
+
+.person_div.active {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.person_div.active .image_border {
+  height: 25vh;
+  width: 25vh;
+}
+
+.desc {
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  color: yellow;
+  font-size: 11pt;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .B_K {
+    left: 9%;
+    top: 9%;
+  }
+
+  .O_P_C {
+    left: 71%;
+    top: 18%;
+  }
+
+  .V_D_P {
+    left: 40%;
+    top: 21%;
+  }
+
+  .L_B_G {
+    left: 53%;
+    top: 50%;
+  }
+
+  .L_L_L {
+    left: 16%;
+    top: 42%;
+  }
+
+  .G_L_Z {
+    left: 75%;
+    top: 64%;
+  }
+
+  .T_A {
+    left: 34%;
+    top: 71%;
+  }
+}
+
+@media (min-width: 992px) {
+  .B_K {
+    left: 9%;
+    top: 9%;
+  }
+
+  .O_P_C {
+    left: 71%;
+    top: 18%;
+  }
+
+  .V_D_P {
+    left: 40%;
+    top: 21%;
+  }
+
+  .L_B_G {
+    left: 53%;
+    top: 50%;
+  }
+
+  .L_L_L {
+    left: 16%;
+    top: 42%;
+  }
+
+  .G_L_Z {
+    left: 75%;
+    top: 64%;
+  }
+
+  .T_A {
+    left: 37%;
+    top: 71%;
+  }
 }
