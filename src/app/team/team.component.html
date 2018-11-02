@@ -1,13 +1,28 @@
 <div class="background">
   <div class="team_filed">
     <div class="team_title">&nbsp;&nbsp; 3_ÉS TEAM</div>
-    <div *ngFor="let person of team" class="person_div" [style.top]="person.top+'%'" [style.left]="person.left+'%'">
+
+    <div *ngFor="let person of team" class="person_div" [style.top]="person.top+'%'" [style.left]="person.left+'%'"
+      (click)="select(person)">
       <div class="name_field">{{person.name}}</div>
       <div class="image_border">
         <div class="avatar">
         </div>
       </div>
       <div class="desc hidden">{{person.desc}}</div>
+    </div>
+    <div class="mask">
+      <div class="modal">
+        <div class="person_div active">
+          <div class="name_field">{{selectedPerson.name}}</div>
+          <div class="image_border">
+            <div class="avatar">
+            </div>
+          </div>
+          <div class="desc">{{selectedPerson.desc}}</div>
+          <button (click)="close()">Jó, köszi!</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
