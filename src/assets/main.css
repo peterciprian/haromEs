@@ -229,76 +229,37 @@ a#in {
   display: none;
 }
 
-@media (max-width: 991px) {
-  .B_K {
-    left: 9%;
-    top: 9%;
-  }
-
-  .O_P_C {
-    left: 71%;
-    top: 18%;
-  }
-
-  .V_D_P {
-    left: 40%;
-    top: 21%;
-  }
-
-  .L_B_G {
-    left: 53%;
-    top: 50%;
-  }
-
-  .L_L_L {
-    left: 16%;
-    top: 42%;
-  }
-
-  .G_L_Z {
-    left: 75%;
-    top: 64%;
-  }
-
-  .T_A {
-    left: 34%;
-    top: 71%;
-  }
+.B_K {
+  left: 9%;
+  top: 9%;
 }
 
-@media (min-width: 992px) {
-  .B_K {
-    left: 9%;
-    top: 9%;
-  }
+.O_P_C {
+  left: 71%;
+  top: 18%;
+}
 
-  .O_P_C {
-    left: 71%;
-    top: 18%;
-  }
+.V_D_P {
+  left: 40%;
+  top: 21%;
+}
 
-  .V_D_P {
-    left: 40%;
-    top: 21%;
-  }
+.L_B_G {
+  left: 53%;
+  top: 50%;
+}
 
-  .L_B_G {
-    left: 53%;
-    top: 50%;
-  }
+.L_L_L {
+  left: 16%;
+  top: 42%;
+}
 
-  .L_L_L {
-    left: 16%;
-    top: 42%;
-  }
+.G_L_Z {
+  left: 75%;
+  top: 64%;
+}
 
-  .G_L_Z {
-    left: 75%;
-    top: 64%;
-  }
-
-  .T_A {
-    left: 37%;
-    top: 71%;
-  }
+.T_A {
+  left: 34%;
+  top: 71%;
 }

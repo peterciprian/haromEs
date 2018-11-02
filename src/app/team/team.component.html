@@ -1,72 +1,13 @@
 <div class="background">
   <div class="team_filed">
     <div class="team_title">&nbsp;&nbsp; 3_ÉS TEAM</div>
-    <div class="person_div B_K" (click)="select($event)">
-      <div class="name_field">Benkő <br> Krisztina</div>
+    <div *ngFor="let person of team" class="person_div" [style.top]="person.top+'%'" [style.left]="person.left+'%'">
+      <div class="name_field">{{person.name}}</div>
       <div class="image_border">
         <div class="avatar">
         </div>
       </div>
-      <div class="desc hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatibus a quae
-        nobis
-        laborum sed nisi sunt, et distinctio, tenetur omnis iure quis iste in rem soluta adipisci! Quas, molestias.</div>
+      <div class="desc hidden">{{person.desc}}</div>
     </div>
-    <div class="person_div O_P_C" (click)="select($event)">
-      <div class="name_field">Oláh <br> Péter Ciprián</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia fugit veniam hic
-        laudantium?
-        Ab, pariatur laboriosam aspernatur atque alias quisquam nam corporis sint voluptatem vel natus doloremque
-        temporibus accusamus sunt.</div>
-    </div>
-    <div class="person_div V_D_P" (click)="select($event)">
-      <div class="name_field">Vadász <br> Dániel Pál</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis impedit vero
-        nihil neque
-        excepturi cum nobis? Possimus laborum nam nostrum unde eligendi, consequuntur nihil dolorum ducimus tenetur ea,
-        beatae dicta!</div>
-    </div>
-    <div class="person_div L_B_G" (click)="select($event)">
-      <div class="name_field">Lehotai <br> Bence Gábor</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum culpa nam animi,
-        facilis
-        aspernatur quidem ab non accusamus nulla, aut, quasi repudiandae cupiditate sequi ipsam dolor. Quod, laudantium
-        fuga!</div>
-    </div>
-    <div class="person_div L_L_L" (click)="select($event)">
-      <div class="name_field">Lakner <br> Lóránd László</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi fugit veritatis dolores,
-        reprehenderit saepe laboriosam dolorum veniam, quis quae quod architecto optio sunt necessitatibus porro amet
-        obcaecati sit iusto magnam.</div>
-    </div>
-    <div class="person_div G_L_Z" (click)="select($event)">
-      <div class="name_field">Gyimesi <br> Levente Zsolt</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, odit. Eius,
-        voluptatibus
-        error placeat voluptas corporis tempora incidunt nostrum id, tenetur eaque esse temporibus quidem inventore
-        consequatur quam dolores perspiciatis.</div>
-    </div>
-    <div class="person_div T_A" (click)="select($event)">
-      <div class="name_field">Treszai <br> Anett</div>
-      <div class="image_border">
-        <div class="avatar"></div>
-      </div>
-      <div class="desc hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit unde quos ad
-        itaque
-        doloremque. Libero facilis odio iste quia voluptatibus inventore distinctio, tenetur dolor. Repellat mollitia
-        ullam tempora aut.</div>
-    </div>
+  </div>
+</div>
